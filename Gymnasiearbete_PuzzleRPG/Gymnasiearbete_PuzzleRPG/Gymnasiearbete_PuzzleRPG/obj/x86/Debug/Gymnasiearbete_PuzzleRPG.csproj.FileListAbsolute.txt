@@ -1,0 +1,11 @@
+C:\Users\johan.huang\Documents\GitHub\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\obj\x86\Debug\Gymnasiearbete_PuzzleRPG.csprojResolveAssemblyReference.cache
+C:\Users\johan.huang\Documents\GitHub\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\johan.huang\Documents\GitHub\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\bin\x86\Debug\Gymnasiearbete_PuzzleRPG.exe
+C:\Users\johan.huang\Documents\GitHub\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\bin\x86\Debug\Gymnasiearbete_PuzzleRPG.pdb
+C:\Users\johan.huang\Documents\GitHub\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\obj\x86\Debug\Gymnasiearbete_PuzzleRPG.exe
+C:\Users\johan.huang\Documents\GitHub\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\obj\x86\Debug\Gymnasiearbete_PuzzleRPG.pdb
+C:\Users\johan.huang\Documents\GitHub\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\bin\x86\Debug\Content\bomb.xnb
+C:\Users\johan.huang\Documents\GitHub\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\bin\x86\Debug\Content\grass.xnb
+C:\Users\johan.huang\Documents\GitHub\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\bin\x86\Debug\Content\cursor.xnb
+C:\Users\johan.huang\Documents\GitHub\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\bin\x86\Debug\Content\ground.xnb
+C:\Users\johan.huang\Documents\GitHub\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\bin\x86\Debug\Content\flag.xnb

@@ -19,6 +19,9 @@ namespace Gymnasiearbete_PuzzleRPG
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        Map m;
+        
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -34,7 +37,7 @@ namespace Gymnasiearbete_PuzzleRPG
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-
+            Globals.Initialize();
             base.Initialize();
         }
 
@@ -48,6 +51,8 @@ namespace Gymnasiearbete_PuzzleRPG
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
+            TextureManager.LoadContent(Content);
+            Map.Initialize(Content);
         }
 
         /// <summary>
@@ -71,7 +76,8 @@ namespace Gymnasiearbete_PuzzleRPG
                 this.Exit();
 
             // TODO: Add your update logic here
-
+            Cursor.Update();
+            Globals.Update();
             base.Update(gameTime);
         }
 
@@ -84,7 +90,10 @@ namespace Gymnasiearbete_PuzzleRPG
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
-
+            spriteBatch.Begin();
+            Map.Draw(spriteBatch);
+            Cursor.Draw(spriteBatch);
+            spriteBatch.End();
             base.Draw(gameTime);
         }
     }
