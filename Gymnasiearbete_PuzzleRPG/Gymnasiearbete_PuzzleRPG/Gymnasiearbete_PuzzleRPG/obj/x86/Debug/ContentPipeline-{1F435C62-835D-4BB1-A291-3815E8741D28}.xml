@@ -46,6 +46,42 @@
       <Output>C:\Users\johan.huang\Documents\GitHub\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\bin\x86\Debug\Content\flag.xnb</Output>
       <Time>2015-10-13T16:21:27.9538625+02:00</Time>
     </Item>
+    <Item>
+      <Source>boy1.png</Source>
+      <Name>boy1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\johan.huang\Documents\GitHub\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\bin\x86\Debug\Content\boy1.xnb</Output>
+      <Time>2015-12-02T01:00:55.3285577+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Font1.spritefont</Source>
+      <Name>Font1</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\johan.huang\Documents\GitHub\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\bin\x86\Debug\Content\Font1.xnb</Output>
+      <Time>2015-11-07T00:35:17.0124033+01:00</Time>
+    </Item>
+    <Item>
+      <Source>PuzzleRPG_BGM01.wav</Source>
+      <Name>PuzzleRPG_BGM01</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\johan.huang\Documents\GitHub\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\bin\x86\Debug\Content\PuzzleRPG_BGM01.xnb</Output>
+      <Time>2016-02-02T09:31:25.6243528+01:00</Time>
+    </Item>
+    <Item>
+      <Source>PuzzleRPG_BGM02.wav</Source>
+      <Name>PuzzleRPG_BGM02</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\johan.huang\Documents\GitHub\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\Gymnasiearbete_PuzzleRPG\bin\x86\Debug\Content\PuzzleRPG_BGM02.xnb</Output>
+      <Time>2016-02-02T13:56:12.0166665+01:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{1F435C62-835D-4BB1-A291-3815E8741D28}</ContentProjectGUID>
@@ -85,7 +121,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2015-08-29T14:05:57.4299707+02:00</Value>
+        <Value>2015-12-05T04:55:03.1542309+01:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

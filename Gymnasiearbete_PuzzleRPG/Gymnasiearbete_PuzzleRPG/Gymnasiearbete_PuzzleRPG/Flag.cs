@@ -23,5 +23,10 @@ namespace Gymnasiearbete_PuzzleRPG
             this.Position = position;
             this.Timer = timer = 100;
         }
+
+        public void Draw(SpriteBatch spriteBatch)
+        {
+            spriteBatch.Draw(this.Texture, this.Position * 32, Color.White);
+        }
     }
 }

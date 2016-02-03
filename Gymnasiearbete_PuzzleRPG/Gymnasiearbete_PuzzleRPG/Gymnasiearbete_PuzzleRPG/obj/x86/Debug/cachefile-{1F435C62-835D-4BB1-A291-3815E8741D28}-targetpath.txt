@@ -3,3 +3,7 @@ Content\grass.xnb
 Content\cursor.xnb
 Content\ground.xnb
 Content\flag.xnb
+Content\boy1.xnb
+Content\Font1.xnb
+Content\PuzzleRPG_BGM01.xnb
+Content\PuzzleRPG_BGM02.xnb

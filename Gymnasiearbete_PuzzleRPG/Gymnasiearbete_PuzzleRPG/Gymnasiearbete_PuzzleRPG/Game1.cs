@@ -18,9 +18,9 @@ namespace Gymnasiearbete_PuzzleRPG
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-
-        Map m;
-        
+        public static SpriteFont textFont;
+        public SoundEffectInstance sei1;
+        public SoundEffectInstance sei2;
 
         public Game1()
         {
@@ -51,8 +51,18 @@ namespace Gymnasiearbete_PuzzleRPG
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
+            textFont = Content.Load<SpriteFont>("Font1");
             TextureManager.LoadContent(Content);
+            SoundManager.LoadContent(Content);
+            
+            sei1 = SoundManager.track1.CreateInstance();
+            sei2 = SoundManager.track2.CreateInstance();
+            sei1.IsLooped = true;
+            sei2.IsLooped = true;
+            sei1.Play();
+
             Map.Initialize(Content);
+            
         }
 
         /// <summary>
@@ -93,6 +103,12 @@ namespace Gymnasiearbete_PuzzleRPG
             spriteBatch.Begin();
             Map.Draw(spriteBatch);
             Cursor.Draw(spriteBatch);
+
+            for (int i = 0; i < Globals.flags.Count; i++)
+            {
+                Globals.flags[i].Draw(spriteBatch);
+            }
+
             spriteBatch.End();
             base.Draw(gameTime);
         }

@@ -35,7 +35,7 @@ namespace Gymnasiearbete_PuzzleRPG
 
         public virtual void Draw(SpriteBatch spriteBatch)
         {
-
+            spriteBatch.Draw(this.Texture, this.Position * 32, Color.White);
         }
     }
 }

@@ -14,15 +14,11 @@ namespace Gymnasiearbete_PuzzleRPG
     class Cursor
     {
         public static Vector2 cursorPosition;
+        static Player p = new Player(TextureManager.boy, Vector2.Zero, "James", 5);
 
         public Cursor()
         {
             
-        }
-
-        public static void SetFlag(Vector2 position)
-        {
-
         }
 
         public static void Update()
@@ -32,28 +28,41 @@ namespace Gymnasiearbete_PuzzleRPG
             if (cursorPosition.Y > 0) { if (Globals.ks.IsKeyDown(Keys.Up) && Globals.prevKs.IsKeyUp(Keys.Up)) { cursorPosition.Y += -1; } }
             if (cursorPosition.Y < Map.map1.GetLength(1) - 1) { if (Globals.ks.IsKeyDown(Keys.Down) && Globals.prevKs.IsKeyUp(Keys.Down)) { cursorPosition.Y += 1; } }
 
-            if (Globals.ks.IsKeyDown(Keys.Space) && Globals.prevKs.IsKeyUp(Keys.Space)) 
-            { 
+            p.Update();
+
+            if (Globals.ks.IsKeyDown(Keys.Space) && Globals.prevKs.IsKeyUp(Keys.Space) && Map.map1[(int)cursorPosition.X, (int)cursorPosition.Y].IsFlag == false) 
+            {
+                p.MoveCharacter(new Vector2(cursorPosition.X, cursorPosition.Y));
+
                 if (Map.map1[(int)cursorPosition.X, (int)cursorPosition.Y].type == Tile.Type.Bomb) 
                 { 
                     Map.map1[(int)cursorPosition.X, (int)cursorPosition.Y].Texture = TextureManager.bomb; 
                 }
 
-                if (Map.map1[(int)cursorPosition.X, (int)cursorPosition.Y].type == Tile.Type.Ground)
+                else if (Map.map1[(int)cursorPosition.X, (int)cursorPosition.Y].type == Tile.Type.Ground)
                 {
-                    Map.map1[(int)cursorPosition.X, (int)cursorPosition.Y].Texture = TextureManager.ground;
                     Map.CheckTile(cursorPosition);
-                    Map.CheckTile(new Vector2(cursorPosition.X + 1, cursorPosition.Y));
-                    Map.CheckTile(new Vector2(cursorPosition.X - 1, cursorPosition.Y));
-                    Map.CheckTile(new Vector2(cursorPosition.X, cursorPosition.Y + 1));
-                    Map.CheckTile(new Vector2(cursorPosition.X, cursorPosition.Y - 1));
                 } 
+            }
+
+            if (Globals.ks.IsKeyDown(Keys.LeftAlt) && Globals.prevKs.IsKeyUp(Keys.LeftAlt))
+            {
+                if (Map.map1[(int)cursorPosition.X, (int)cursorPosition.Y].IsFlag == false)
+                {
+                    Globals.flags.Add(new Flag(TextureManager.flag, cursorPosition, 10));
+                    Map.map1[(int)cursorPosition.X, (int)cursorPosition.Y].IsFlag = true;
+                }
+                else
+                {
+                    
+                }
             }
         }
 
         public static void Draw(SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(TextureManager.cursor, new Vector2(cursorPosition.X * 32, cursorPosition.Y * 32), Color.White);
+            p.Draw(spriteBatch);
         }
     }
 }

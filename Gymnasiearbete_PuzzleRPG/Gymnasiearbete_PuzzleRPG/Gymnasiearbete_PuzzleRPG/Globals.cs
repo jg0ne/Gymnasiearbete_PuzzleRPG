@@ -16,11 +16,13 @@ namespace Gymnasiearbete_PuzzleRPG
         public static Random Randomizer;
         public static KeyboardState ks;
         public static KeyboardState prevKs;
+        public static List<Flag> flags;
 
         public static void Initialize()
         {
             Randomizer = new Random();
             ks = Keyboard.GetState();
+            flags = new List<Flag>();
         }
 
         public static void Update()

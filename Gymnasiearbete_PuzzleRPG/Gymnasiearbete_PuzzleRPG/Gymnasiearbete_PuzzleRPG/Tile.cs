@@ -13,16 +13,19 @@ namespace Gymnasiearbete_PuzzleRPG
 {
     class Tile : GameObject
     {
-        public enum Type {  Bomb = 0, Block = 1, Ground = 2}
-        public Texture2D Texture;
+        public enum Type {  Bomb = 0, Block = 1, Ground = 2 }
+        public int AdjacentBombs { get; set; }
+        public bool IsFlag { get; set; }
 
         public Type type;
 
-        public Tile(Texture2D texture, Type typ, Rectangle hitbox)
+        public Tile(Texture2D texture, Type typ, Rectangle hitbox, int adjacentBombs, bool isFlag)
             :base(texture, hitbox)
         {
             this.Texture = texture;
             this.type = typ;
+            this.AdjacentBombs = adjacentBombs;
+            this.IsFlag = isFlag;
         }
     }
 }

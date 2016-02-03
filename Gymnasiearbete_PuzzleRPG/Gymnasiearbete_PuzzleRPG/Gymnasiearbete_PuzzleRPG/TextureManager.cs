@@ -18,7 +18,10 @@ namespace Gymnasiearbete_PuzzleRPG
             bomb,
             ground,
             flag,
-            cursor;
+            cursor,
+            boy;
+
+        public static SpriteFont font1;
 
         public static void LoadContent(ContentManager content)
         {
@@ -27,6 +30,9 @@ namespace Gymnasiearbete_PuzzleRPG
             ground = content.Load<Texture2D>("ground");
             flag = content.Load<Texture2D>("flag");
             cursor = content.Load<Texture2D>("cursor");
+            boy = content.Load<Texture2D>("boy1");
+
+            font1 = content.Load<SpriteFont>("Font1");
         }
 
 
